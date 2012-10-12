@@ -3,7 +3,6 @@
     <head>
         <title>ball \o/</title>
         <style>
-            gui
             form{
                 width: 330px;
                 margin: 20px;
