@@ -36,6 +36,46 @@
             setInterval(moveBall, 100);
         }
         
+        function moveBall(){
+            ctx.clearRect(boxX, boxY, boxWidth, boxHeigth);
+            moveEndCheck();
+ctx.beginPath();
+ctx.arc(ballX, ballY, ballRad, 0, Math.PI*2, true);
+ctx.fill();
+ctx.strokeRect(boxX, boxY, boxWidth, boxHeigth);
+        }
+        
+        function moveEndCheck(){
+            var nBallX = ballX + ballDeslcX, 
+                nBallY = ballY + ballDeslcY;
+                
+                if(nBallX > boxBoundX){
+                    ballDeslcX =-ballDeslcX;
+                    nBallX = boxBoundX;
+                }
+                if(nBallX < inBoxBoundX){
+                    nBallX = inBoxBoundX;
+                    ballDeslcX = -ballDeslcY;
+                }
+                if(nBallY > boxBoundY){
+                    nBallY = boxBoundY;
+                    ballDeslcY = -ballDeslcY;
+                }
+                if(nBallY < inBoxBoundY){
+                    nBallY = inBoxBoundY;
+                    ballDeslcY = -ballDeslcY;
+                }
+                
+                ballX = nBallX;
+                ballY = nBallY;
+                
+                function change(){
+                    ballDeslcX = Number(f.vh.value);
+                    ballDeslcY = Number(f.vv.value);
+                    return false;
+            }
+        }
+        
             </script>
         
     </head>
