@@ -19,8 +19,7 @@
             var boxHeigth = 250;//altura caixa
             var ballRad = 10;//raio da bola
             var boxBoundX = boxWidth +  boxX - ballRad;//limite à direita
-            var boxBoundY = boxHeigth + boxY - ballRad;//limite ao fundo
-                             
+            var boxBoundY = boxHeigth + boxY - ballRad;//limite ao fundo                             
             var inBoxBoundX = boxX + ballRad;//limite a esquerda
             var inBoxBoundY =boxY + ballRad;//limite do topo
             var ballX = 50;//posição inicial x
