@@ -17,7 +17,7 @@
             var boxY = 30;//local conto seperior y
             var boxWidth = 350;//largura caixa
             var boxHeigth = 250;//altura caixa
-            var ballRad = 10;//raio da bola
+            var ballRad = 10;//raio dsdfsdfsdfsssfsfsfsdfsa bola
             var boxBoundX = boxWidth +  boxX - ballRad;//limite à direita
             var boxBoundY = boxHeigth + boxY - ballRad;//limite ao fundo                             
             var inBoxBoundX = boxX + ballRad;//limite a esquerda
